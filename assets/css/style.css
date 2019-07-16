@@ -15,16 +15,44 @@ body {
 }
 
 #canvas {
-    padding-left: 0;
-    padding-right: 0;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 40px;
+    left: 50vw;
+    margin-left: -350px;
+    margin-top: 20px;
     display: block;
+    position: absolute;
 /*    width: 700px;
     height: 700px;*/
 /*    background-color: red;*/
 }
+
+#canvasCover {
+    left: 50vw;
+    margin-left: -350px;
+    margin-top: 20px;
+    display: block;
+/*    background-color: red;*/
+    background-opacity: 50%;
+    width: 780px;
+    height: 700px;
+    z-index: 2;
+    position: absolute;
+}
+
+#info {
+  width: 180px;
+  padding: 20px;
+  float: left;
+  font-size: 20px;
+}
+
+.recipeName {
+  position: absolute;
+}
+
+.recipeName:hover {
+  color: orange;
+}
+
 
 .letterBox {
   border: 3px solid black;
@@ -33,7 +61,7 @@ body {
   width: 500px;
   z-index: 10;
   left: 50vw;
-  top: 25vw;
+  top: 280px;
   margin-left:-270px;
   position: absolute;
   background-color: white;
