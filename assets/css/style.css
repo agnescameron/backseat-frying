@@ -1,0 +1,33 @@
+body {
+  font-family: helvetica;
+}
+
+#closeButton {
+  width: 30px;
+  height: 30px;
+  z-index: 10;
+  top: 0px;
+  background-image: url("../img/close.png");
+  background-size: cover;
+  text-align: justify;
+  position: relative;
+  float: right;
+}
+
+
+.letterBox {
+  border: 3px solid black;
+  display: inline-block;
+  padding: 20px;
+  width: 500px;
+  z-index: 10;
+  left: 50vw;
+  top: 15vw;
+  margin-left:-250px;
+  position: absolute;
+}
+
+.letterContents {
+  width: 90%;
+  position: relative;
+}
