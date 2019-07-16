@@ -43,3 +43,41 @@ body {
   width: 90%;
   position: relative;
 }
+
+ul {
+  list-style-type:none;
+}
+
+li {
+  padding-top: 5px;
+}
+
+#tagline {
+  font-style: italic;
+}
+
+#textbox {
+  padding-left: 450px;
+  padding-right: 450px;
+}
+#imagewords {
+  float: left;
+}
+
+#img1 {
+  position: fixed;
+  width: 250px;
+  float:right;
+  bottom:0;
+  display: none;
+  z-index: 10;
+  right: 10vw;
+  top: 10vw;
+  margin-left:-270px;
+  position: absolute;
+
+}
+#imagewords:hover #img1 {
+        display: block;
+}
+    
