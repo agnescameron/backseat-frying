@@ -38,7 +38,7 @@ function drawGrid(){
       $('<div />', {
         id: recipes[i].name,
         class: 'recipeName',
-        click: function(){ console.log(this.id) }, 
+        click: function(){ window.location.href = 'recipes/' + (this.id)+'.html' }, 
       })
       .html(recipes[i].name.replace(/-/g, ' '))
       .css({left: 35*(recipes[i].speed+10), top: (690-35*(recipes[i].salad+10)) })
