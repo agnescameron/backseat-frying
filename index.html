@@ -2,12 +2,13 @@
 <head>
 	  <link rel="stylesheet" href="assets/css/style.css">
 	    <script src="assets/js/jquery.js"></script>
+	    <script type="text/javascript" src="assets/js/recipes.js"></script>
 </head>
 
 
 <body>
 <div class="letterBox">
-	<div id="closeButton" onClick='closeLetter()'></div>
+	<div id="closeButton" onClick='toggleLetter()'></div>
 	<p id = "letterContents">
 	Dear Adam, <br><br>
 	Happy birthday! We've tried to collect some of the favourite Egg House recipes together, and put them in one place. The collection will expand over time -- for now, we've included a lot of fast ones to last you through thesis season.
@@ -17,6 +18,12 @@
 	agnes + gary
 	</p>
 </div>
+
+<div id='info'>
+	<div onClick='toggleLetter()'>x about</div>
+	<div onClick='console.log("ingredients")'>x ingredients</div>
+</div>
+<div id="canvasCover"></div>
 <canvas id="canvas" width="700px" height="700px">
   Your browser does not support the canvas element.
 </canvas>
