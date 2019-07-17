@@ -1,10 +1,14 @@
 function closeLetter() {
-	console.log('closing letter')
 	$('.letterBox').hide()
 }
 
 function openLetter() {
-  console.log('opening letter')
+  $('#letterContents').html(` Dear Adam, <br><br>
+  Happy birthday! We've tried to collect some of the favourite Egg House recipes together, and put them in one place. The collection will expand over time -- for now, we've included a lot of fast ones to last you through thesis season.
+  <br><br>
+  Sending all of our love!
+  <br><br>
+  agnes + gary`)
   $('.letterBox').show()
 }
 
