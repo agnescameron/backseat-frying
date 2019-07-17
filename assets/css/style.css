@@ -45,6 +45,10 @@ body {
   font-size: 20px;
 }
 
+#parts {
+  margin-bottom: 40px;
+}
+
 .recipeName {
   position: absolute;
 }
@@ -85,9 +89,12 @@ li {
 }
 
 #textbox {
-  padding-left: 450px;
-  padding-right: 450px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 35vw;
+  margin-bottom: 80px;
 }
+
 #imagewords {
   float: left;
 }
@@ -105,7 +112,43 @@ li {
   position: absolute;
 
 }
+
+#img2 {
+  position: fixed;
+  width: 250px;
+  float:right;
+  bottom:0;
+  display: none;
+  z-index: 10;
+  right: 10vw;
+  top: 38vw;
+  margin-left:-270px;
+  position: absolute;
+
+}
+
+#img3 {
+  position: fixed;
+  width: 250px;
+  float:right;
+  bottom:0;
+  display: none;
+  z-index: 10;
+  right: 10vw;
+  top: 60vw;
+  margin-left:-270px;
+  position: absolute;
+
+}
+
 #imagewords:hover #img1 {
         display: block;
 }
-    
+   
+#imagewords:hover #img2 {
+        display: block;
+}
+
+#imagewords:hover #img3 {
+        display: block;
+}
