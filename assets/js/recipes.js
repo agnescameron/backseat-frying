@@ -91,12 +91,12 @@ var recipes = [
     'classification': 'main'
   },      
 
-  {
-    'name': 'hot-fish-soup',
-    'speed': -1,
-    'salad': 3,
-    'classification': 'soup'
-  },      
+  // {
+  //   'name': 'hot-fish-soup',
+  //   'speed': -1,
+  //   'salad': 3,
+  //   'classification': 'soup'
+  // },      
 
   {
     'name': 'komatsuna-nibitashi',
@@ -121,7 +121,7 @@ var recipes = [
 
   {
     'name': 'miso-aubergine',
-    'speed': 0,
+    'speed': -0.5,
     'salad': 2,
     'classification': 'side'
   },
