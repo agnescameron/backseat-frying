@@ -45,8 +45,14 @@ body {
   font-size: 20px;
 }
 
-#parts {
-  margin-bottom: 40px;
+#parts-spaced {
+  margin-bottom: 45px;
+  margin-top: -5px;  
+}
+
+#instructions {
+  margin-bottom: 30px;
+  margin-left: -30px;
 }
 
 .recipeName {
@@ -65,7 +71,7 @@ body {
   width: 500px;
   z-index: 10;
   left: 50vw;
-  top: 280px;
+  top: 290px;
   margin-left:-270px;
   position: absolute;
   background-color: white;
@@ -121,7 +127,7 @@ li {
   display: none;
   z-index: 10;
   right: 10vw;
-  top: 38vw;
+  top: 46vw;
   margin-left:-270px;
   position: absolute;
 
@@ -135,7 +141,7 @@ li {
   display: none;
   z-index: 10;
   right: 10vw;
-  top: 60vw;
+  top: 70vw;
   margin-left:-270px;
   position: absolute;
 
