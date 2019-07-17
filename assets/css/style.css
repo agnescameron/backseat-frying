@@ -43,6 +43,8 @@ body {
   padding: 20px;
   float: left;
   font-size: 20px;
+  z-index: 5;
+  position: absolute;
 }
 
 #parts-spaced {

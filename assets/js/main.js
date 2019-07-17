@@ -44,11 +44,12 @@ function generateMeal () {
   if(people === 2){
     //line between dishes
     //2 sides, soup+veg, soup+side, side+veg, main+veg
-    var choices = sides.concat(soups).concat(veg);
-    var choice1 = choices[Math.floor(Math.random()*choices.length)];
+    var choices = sides.concat(soups, veg);
+    var length = choices.length;
+    var choice1 = choices[Math.floor(Math.random()*length)];
     points.push(choice1); 
     remove(choices, choice1)   
-    var choice2 = choices[Math.floor(Math.random()*choices.length)];
+    var choice2 = choices[Math.floor(Math.random()*length-1)];
     points.push(choice2); 
   }
 
@@ -71,10 +72,11 @@ function generateMeal () {
     }
 
     var extras = veg.concat(sides)
-    var extra1 = extras[Math.floor(Math.random()*extras.length)];
+    var length = extras.length;
+    var extra1 = extras[Math.floor(Math.random()*length)];
     points.push(extra1)
     remove(extras, extra1);
-    var extra2 = extras[Math.floor(Math.random()*extras.length)];
+    var extra2 = extras[Math.floor(Math.random()*length-1)];
     points.push(extra2)
 
   }
@@ -86,14 +88,16 @@ function generateMeal () {
     var main = mains[Math.floor(Math.random()*mains.length)];
     points.push(main)
 
-    var extras = veg.concat(sides).concat(soup)
-    var extra1 = extras[Math.floor(Math.random()*extras.length)];
+    var extras = veg.concat(sides, soups)
+    console.log('extras', extras, extras.length)
+    var length = extras.length;
+    var extra1 = extras[Math.floor(Math.random()*length)];
     points.push(extra1)
     remove(extras, extra1);
-    var extra2 = extras[Math.floor(Math.random()*extras.length)];
+    var extra2 = extras[Math.floor(Math.random()*length-1)];
     points.push(extra2)
     remove(extras, extra2);
-    var extra3 = extras[Math.floor(Math.random()*extras.length)];
+    var extra3 = extras[Math.floor(Math.random()*length-2)];
     points.push(extra3)
 
   }
@@ -102,20 +106,22 @@ function generateMeal () {
     //line between dishes
     //any 4 dishes excluding breakfast and containing main
     //or breakfast, with 3 veg
-    var main1 = mains[Math.floor(Math.random()*mains.length)];
+    var length = mains.length;
+    var main1 = mains[Math.floor(Math.random()*length)];
     points.push(main1)
     remove(mains, main1);
-    var main2 = mains[Math.floor(Math.random()*mains.length)];
+    var main2 = mains[Math.floor(Math.random()*length-1)];
     points.push(main2)
 
-    var extras = veg.concat(sides).concat(soup)
-    var extra1 = extras[Math.floor(Math.random()*extras.length)];
+    var extras = veg.concat(sides, soups)
+    var length = extras.length;
+    var extra1 = extras[Math.floor(Math.random()*length)];
     points.push(extra1)
     remove(extras, extra1);
-    var extra2 = extras[Math.floor(Math.random()*extras.length)];
+    var extra2 = extras[Math.floor(Math.random()*(length-1))];
     points.push(extra2)
     remove(extras, extra2);
-    var extra3 = extras[Math.floor(Math.random()*extras.length)];
+    var extra3 = extras[Math.floor(Math.random()*(length-2))];
     points.push(extra3)
 
   }
