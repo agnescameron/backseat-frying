@@ -131,7 +131,7 @@ function generateMeal () {
   }
 
 
-  descriptors = ["stunning", "delicious", "charming", "delightful", "romantic", "filling", "nutritious", "generous", "luxuriant", "healthy", "simple"];
+  descriptors = ["exciting", "stunning", "delicious", "charming", "delightful", "romantic", "filling", "nutritious", "generous", "luxuriant", "healthy", "simple"];
   descriptor = descriptors[Math.floor(Math.random()*descriptors.length)];
 
   var recipeList = '';
@@ -139,9 +139,9 @@ function generateMeal () {
 
   for(var i=(points.length-1); i>=0; i--){
     console.log(recipeList, i)
-    if (i===0) recipeList = recipeList + points[i].name.replace(/-/g, ' ');
-    else if (i===1) recipeList = recipeList + points[i].name.replace(/-/g, ' ') + ' and ';
-    else recipeList = recipeList + `${points[i].name.replace(/-/g, ' ')}, `
+    if (i===0) recipeList = recipeList + '<a href=recipes/' + points[i].name +'.html>'+points[i].name.replace(/-/g, ' ') + '</a>';
+    else if (i===1) recipeList = recipeList + '<a href=recipes/'+points[i].name+'.html>'+points[i].name.replace(/-/g, ' ') + '</a>' + ' and ';
+    else recipeList = recipeList + '<a href=recipes/'+points[i].name+'.html>'+points[i].name.replace(/-/g, ' ') + '</a>, '
   }
 
   var oracleText = `The oracle recommends a ${descriptor} meal for ${people} of ${recipeList}` 

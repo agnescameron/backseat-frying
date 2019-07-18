@@ -2,6 +2,15 @@ body {
   font-family: helvetica;
 }
 
+a {
+  text-decoration: none; 
+  color: black;
+}
+
+a:hover {
+    color: orange;
+}
+
 #closeButton {
   width: 30px;
   height: 30px;
@@ -109,7 +118,7 @@ li {
 
 #img1 {
   position: fixed;
-  width: 250px;
+  width: 20vw;
   float:right;
   bottom:0;
   display: none;
@@ -123,7 +132,7 @@ li {
 
 #img2 {
   position: fixed;
-  width: 250px;
+  width: 20vw;
   float:right;
   bottom:0;
   display: none;
@@ -137,7 +146,7 @@ li {
 
 #img3 {
   position: fixed;
-  width: 250px;
+  width: 20vw;
   float:right;
   bottom:0;
   display: none;
