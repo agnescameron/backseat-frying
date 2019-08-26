@@ -1,5 +1,26 @@
 var recipes = [
   //speed, salad from -10 to +10, where -10 is slow, fried, and +10 is fast, salad
+
+  {
+    'name': 'spicy-cold-noodles',
+    'speed': 8,
+    'salad': 4,
+    'classification': 'main'
+  },
+
+  {
+    'name': 'tea-egg',
+    'speed': -2,
+    'salad': 8,
+    'classification': 'snack'
+  },
+
+  {
+    'name': 'braised-aubergine',
+    'speed': 4,
+    'salad': 0.5,
+    'classification': 'side'
+  },
   {
     'name': 'beef-peppers-noodles',
     'speed': 4,

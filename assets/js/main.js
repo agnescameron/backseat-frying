@@ -33,6 +33,7 @@ function generateMeal () {
   var points = [];
   var option;
   var mains = getEntries(recipes, "classification", "main");
+  var snacks = getEntries(recipes, "classification", `snack`);
   var veg = getEntries(recipes, "classification", `veg`);
   var sides = getEntries(recipes, "classification", `side`);
   var soups = getEntries(recipes, "classification", `soup`);  
@@ -40,6 +41,11 @@ function generateMeal () {
   var smallsoups = getEntries(recipes, "classification", `small-soup`);
 
   if(people === 1){
+    if(Math.random() < 0.5){
+      var snack = snacks[Math.floor(Math.random()*snacks.length)];
+      points.push(snack);
+    }
+    
     var choices = sides.concat(soups);
     var choice = choices[Math.floor(Math.random()*choices.length)];
     points.push(choice);
