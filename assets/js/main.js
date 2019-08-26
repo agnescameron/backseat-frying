@@ -9,7 +9,7 @@ function openLetter() {
   Sending all of our love!
   <br><br>
   agnes + gary`)
-  $('.letterBox').show()
+  $('.letterBox').toggle()
 }
 
 
