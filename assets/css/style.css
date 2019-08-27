@@ -167,6 +167,10 @@ li {
 
 }
 
+#imagewords:hover {
+  color: orange;
+}
+
 #imagewords:hover #img1 {
         display: block;
 }
