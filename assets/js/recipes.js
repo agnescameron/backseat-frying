@@ -10,7 +10,7 @@ var recipes = [
 
   {
     'name': 'cassava-suman',
-    'speed': -2,
+    'speed': -2.5,
     'salad': -3,
     'classification': 'breakfast-carb'
   },
@@ -214,6 +214,6 @@ var recipes = [
     'name': 'tasty-miso',
     'speed': 9,
     'salad': 3,
-    'classification': 'small-soup'
+    'classification': 'snack'
   },   
 ]

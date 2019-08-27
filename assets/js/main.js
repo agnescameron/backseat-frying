@@ -31,6 +31,9 @@ function remove(array, entry) {
 function generateMeal () {
   var people = Math.floor(Math.random()*5)+1;
   var points = [];
+  var date = new Date();
+  var hour = date.getHours(); 
+  var breakfast = (hour < 11) ? true : false;
   var option;
   var mains = getEntries(recipes, "classification", "main");
   var snacks = getEntries(recipes, "classification", `snack`);
@@ -39,7 +42,6 @@ function generateMeal () {
   var soups = getEntries(recipes, "classification", `soup`); 
   var mezze = getEntries(recipes, "classification", `mezze`); 
   var breakfastcarbs = getEntries(recipes, "classification", `breakfast-carb`);
-  var smallsoups = getEntries(recipes, "classification", `small-soup`);
 
   if(people === 1){
     if(Math.random() < 0.5){
@@ -114,7 +116,12 @@ function generateMeal () {
     }
 
     else {
-      points = mezze;
+      if(breakfast) points = mezze;
+      else {
+        points.push(snacks[Math.floor(Math.random()*snacks.length)]);        
+        points.push(sides[Math.floor(Math.random()*sides.length)]);  
+        points.push(breakfastcarbs[Math.floor(Math.random()*breakfastcarbs.length)]);
+      }
     }
 
   }
@@ -149,16 +156,15 @@ function generateMeal () {
   descriptor = descriptors[Math.floor(Math.random()*descriptors.length)];
 
   var recipeList = '';
-  console.log(points)
+  var meal = breakfast ? "breakfast" : "meal"
 
   for(var i=(points.length-1); i>=0; i--){
-    console.log(recipeList, i)
     if (i===0) recipeList = recipeList + '<a href=recipes/' + points[i].name +'.html>'+points[i].name.replace(/-/g, ' ') + '</a>';
     else if (i===1) recipeList = recipeList + '<a href=recipes/'+points[i].name+'.html>'+points[i].name.replace(/-/g, ' ') + '</a>' + ' and ';
     else recipeList = recipeList + '<a href=recipes/'+points[i].name+'.html>'+points[i].name.replace(/-/g, ' ') + '</a>, '
   }
 
-  var oracleText = `The oracle recommends a ${descriptor} meal for ${people} of ${recipeList}` 
+  var oracleText = `The oracle recommends a ${descriptor} ${meal} for ${people} of ${recipeList}` 
   $('#letterContents').html(oracleText)
   $('.letterBox').show()
 }
@@ -190,13 +196,7 @@ function drawGrid(){
     ctx.fillText("salad", 330, 15);
 
     //each grid cube is 35 by 35
-
     for(var i=0; i<recipes.length; i++){
-
-      //don't do it w canvas because it makes interaction hard
-      // console.log(recipes[i].name)
-      // ctx.fillText(recipes[i].name.replace(/-/g, ' '), 35*(recipes[i].speed+10), (700-35*(recipes[i].salad+10)))
-
       $('<div />', {
         id: recipes[i].name,
         class: 'recipeName',
