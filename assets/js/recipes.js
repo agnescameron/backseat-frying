@@ -9,6 +9,13 @@ var recipes = [
   },
 
   {
+    'name': 'cassava-suman',
+    'speed': -2,
+    'salad': -3,
+    'classification': 'breakfast-carb'
+  },
+
+  {
     'name': 'flatbread',
     'speed': -2,
     'salad': -2,
