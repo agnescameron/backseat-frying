@@ -105,6 +105,15 @@ li {
   font-style: italic;
 }
 
+#captionImage {
+  top: 50vh;
+  z-index: 10;
+  right: 10vw;
+  position: absolute;
+    float:right;
+    width: 300px;
+}
+
 #textbox {
   margin-left: auto;
   margin-right: auto;

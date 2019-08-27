@@ -36,7 +36,8 @@ function generateMeal () {
   var snacks = getEntries(recipes, "classification", `snack`);
   var veg = getEntries(recipes, "classification", `veg`);
   var sides = getEntries(recipes, "classification", `side`);
-  var soups = getEntries(recipes, "classification", `soup`);  
+  var soups = getEntries(recipes, "classification", `soup`); 
+  var mezze = getEntries(recipes, "classification", `mezze`); 
   var breakfastcarbs = getEntries(recipes, "classification", `breakfast-carb`);
   var smallsoups = getEntries(recipes, "classification", `small-soup`);
 
@@ -45,7 +46,7 @@ function generateMeal () {
       var snack = snacks[Math.floor(Math.random()*snacks.length)];
       points.push(snack);
     }
-    
+
     var choices = sides.concat(soups);
     var choice = choices[Math.floor(Math.random()*choices.length)];
     points.push(choice);
@@ -67,7 +68,6 @@ function generateMeal () {
     //line between dishes
     //main and 2 of veg and side, or soup and 2 of veg and side
     option = Math.floor(Math.random()*2);
-    console.log('option is', option)
 
     if(option === 0){
       //pick a main, then randomly 2 sides or veg
@@ -95,20 +95,27 @@ function generateMeal () {
     //line between dishes
     //any 4 dishes excluding breakfast and containing main
     //or breakfast, with 3 veg
-    var main = mains[Math.floor(Math.random()*mains.length)];
-    points.push(main)
+    option = Math.floor(Math.random()*2);
 
-    var extras = veg.concat(sides, soups)
-    console.log('extras', extras, extras.length)
-    var length = extras.length;
-    var extra1 = extras[Math.floor(Math.random()*length)];
-    points.push(extra1)
-    remove(extras, extra1);
-    var extra2 = extras[Math.floor(Math.random()*length-1)];
-    points.push(extra2)
-    remove(extras, extra2);
-    var extra3 = extras[Math.floor(Math.random()*length-2)];
-    points.push(extra3)
+    if(option === 0){
+      var main = mains[Math.floor(Math.random()*mains.length)];
+      points.push(main)
+
+      var extras = veg.concat(sides, soups)
+      var length = extras.length;
+      var extra1 = extras[Math.floor(Math.random()*length)];
+      points.push(extra1)
+      remove(extras, extra1);
+      var extra2 = extras[Math.floor(Math.random()*length-1)];
+      points.push(extra2)
+      remove(extras, extra2);
+      var extra3 = extras[Math.floor(Math.random()*length-2)];
+      points.push(extra3)
+    }
+
+    else {
+      points = mezze;
+    }
 
   }
 
@@ -137,7 +144,8 @@ function generateMeal () {
   }
 
 
-  descriptors = ["exciting", "stunning", "delicious", "charming", "delightful", "romantic", "filling", "nutritious", "generous", "luxuriant", "healthy", "simple"];
+  descriptors = ["exciting", "stunning", "delicious", "charming", "delightful", "romantic", "enticing", "stylish", "vibrant",
+  "filling", "nutritious", "generous", "luxuriant", "healthy", "simple"];
   descriptor = descriptors[Math.floor(Math.random()*descriptors.length)];
 
   var recipeList = '';

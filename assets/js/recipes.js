@@ -9,6 +9,34 @@ var recipes = [
   },
 
   {
+    'name': 'flatbread',
+    'speed': -2,
+    'salad': -2,
+    'classification': 'mezze'
+  },
+
+  {
+    'name': 'fellahi-salad',
+    'speed': 8.5,
+    'salad': 9.5,
+    'classification': 'mezze'
+  },
+
+  {
+    'name': 'baba ganoush',
+    'speed': 2,
+    'salad': 5,
+    'classification': 'mezze'
+  },
+
+  {
+    'name': 'garlic-potato-salad',
+    'speed': 2,
+    'salad': 3,
+    'classification': 'mezze'
+  },
+
+  {
     'name': 'tea-egg',
     'speed': -2,
     'salad': 8,
@@ -94,7 +122,7 @@ var recipes = [
   {
     'name': 'fried-greens',
     'speed': 8.5,
-    'salad': 8,
+    'salad': 7.5,
     'classification': 'veg'
   },      
 
@@ -108,7 +136,7 @@ var recipes = [
   {
     'name': 'grilled-mackerel',
     'speed': 5,
-    'salad': 5,
+    'salad': 4.5,
     'classification': 'main'
   },      
 
