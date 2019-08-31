@@ -30,7 +30,7 @@ var recipes = [
   },
 
   {
-    'name': 'baba ganoush',
+    'name': 'baba-ganoush',
     'speed': 2,
     'salad': 5,
     'classification': 'mezze'
