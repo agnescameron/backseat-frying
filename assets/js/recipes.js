@@ -16,6 +16,13 @@ var recipes = [
   },
 
   {
+    'name': 'maqloubeh',
+    'speed': -6,
+    'salad': -4,
+    'classification': 'mezze-main'
+  },
+
+  {
     'name': 'flatbread',
     'speed': -2,
     'salad': -2,
@@ -101,7 +108,7 @@ var recipes = [
   {
     'name': 'dumplings',
     'speed': -4,
-    'salad': -4,
+    'salad': -4.5,
     'classification': 'main'
   },
 
