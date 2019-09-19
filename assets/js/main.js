@@ -179,7 +179,7 @@ function drawGrid(){
 
   	ctx.lineWidth = 3;
 
-	ctx.beginPath();
+	  ctx.beginPath();
 
     ctx.moveTo(20, 350);
     ctx.lineTo(700, 350);
@@ -195,17 +195,15 @@ function drawGrid(){
     ctx.fillText("fried", 330, 695);
     ctx.fillText("salad", 330, 15);
 
-    //each grid cube is 35 by 35
     for(var i=0; i<recipes.length; i++){
       $('<div />', {
         id: recipes[i].name,
         class: 'recipeName',
-        click: function(){ window.location.href = 'recipes/' + (this.id)+'.html' }, 
+        click: function(){ window.location.href = 'recipes/' + (this.id) + '.html' }, 
       })
       .html(recipes[i].name.replace(/-/g, ' '))
       .css({left: 35*(recipes[i].speed+10), top: (690-35*(recipes[i].salad+10)) })
       .appendTo($('#canvasCover'))
-
      }
 }
 

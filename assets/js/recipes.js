@@ -9,6 +9,13 @@ var recipes = [
   },
 
   {
+    'name': 'hiyayakko',
+    'speed': 10,
+    'salad': 8,
+    'classification': 'side'
+  },
+
+  {
     'name': 'cassava-suman',
     'speed': -2.5,
     'salad': -3,
@@ -57,12 +64,6 @@ var recipes = [
     'classification': 'snack'
   },
 
-  {
-    'name': 'braised-aubergine',
-    'speed': 4,
-    'salad': 0.5,
-    'classification': 'side'
-  },
   {
     'name': 'beef-peppers-noodles',
     'speed': 4,
