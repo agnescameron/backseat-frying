@@ -9,6 +9,13 @@ var recipes = [
   },
 
   {
+    'name': 'blackberry-jam',
+    'speed': -1,
+    'salad': -1,
+    'classification': 'jam'
+  },
+
+  {
     'name': 'hiyayakko',
     'speed': 10,
     'salad': 8,
