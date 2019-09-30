@@ -177,8 +177,8 @@ li {
 
 }
 
-.blog-post{
-  position: relative;
+#blog-container{
+  width: 100%;
 }
 
 .blog-img{
@@ -202,4 +202,20 @@ li {
 
 #imagewords:hover #img3 {
         display: block;
+}
+
+
+@media all and (max-width: 600px) {
+  #textbox {
+    width: 90vw;
+    margin-left: 10px;
+    margin-right: 0px;
+  }
+
+  .blog-img{
+  position: relative;
+  width: 90%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 }
