@@ -177,6 +177,17 @@ li {
 
 }
 
+.blog-post{
+  position: relative;
+}
+
+.blog-img{
+  position: relative;
+  width: 500px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 #imagewords:hover {
   color: orange;
 }

@@ -101,7 +101,7 @@ var recipes = [
   
   {
     'name': 'congee',
-    'speed': -2,
+    'speed': -5,
     'salad': 4,
     'classification':'breakfast-carb'
   },
@@ -223,7 +223,7 @@ var recipes = [
     'speed': 1,
     'salad': 6,
     'classification': 'main'
-  },      
+  },
 
   {
     'name': 'tasty-miso',
