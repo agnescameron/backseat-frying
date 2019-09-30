@@ -162,12 +162,12 @@ var recipes = [
     'classification': 'main'
   },      
 
-  // {
-  //   'name': 'hot-fish-soup',
-  //   'speed': -1,
-  //   'salad': 3,
-  //   'classification': 'soup'
-  // },      
+  {
+    'name': 'fish-head-soup',
+    'speed': -1,
+    'salad': 2.5,
+    'classification': 'soup'
+  },      
 
   {
     'name': 'komatsuna-nibitashi',
