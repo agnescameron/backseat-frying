@@ -9,6 +9,13 @@ var recipes = [
   },
 
   {
+    'name': 'basic-pancake',
+    'speed': 3,
+    'salad': -0.5,
+    'classification': 'breakfast-carb'
+  },
+
+  {
     'name': 'blackberry-jam',
     'speed': -1,
     'salad': -1,
