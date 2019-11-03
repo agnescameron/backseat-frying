@@ -9,6 +9,13 @@ var recipes = [
   },
 
   {
+    'name': 'baingan-masala',
+    'speed': -7,
+    'salad': -1,
+    'classification': 'indian'
+  },
+
+  {
     'name': 'basic-pancake',
     'speed': 3,
     'salad': -0.5,
@@ -18,7 +25,7 @@ var recipes = [
   {
     'name': 'blackberry-jam',
     'speed': -1,
-    'salad': -1,
+    'salad': -4,
     'classification': 'jam'
   },
 
@@ -109,7 +116,7 @@ var recipes = [
   {
     'name': 'congee',
     'speed': -5,
-    'salad': 4,
+    'salad': 2,
     'classification':'breakfast-carb'
   },
 
