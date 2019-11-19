@@ -9,10 +9,17 @@ var recipes = [
   },
 
   {
+    'name': 'chana-dhal',
+    'speed': -5,
+    'salad': 5,
+    'classification': 'indian-side'
+  },
+
+  {
     'name': 'baingan-masala',
     'speed': -7,
     'salad': -1,
-    'classification': 'indian'
+    'classification': 'indian-main'
   },
 
   {
@@ -125,6 +132,13 @@ var recipes = [
     'speed': 9,
     'salad': 9,
     'classification': 'veg'
+  },
+
+  {
+    'name': 'steamed-buns',
+    'speed': -4.5,
+    'salad': -3.5,
+    'classification': 'side'
   },
 
   {
