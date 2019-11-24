@@ -17,7 +17,7 @@ var recipes = [
 
   {
     'name': 'baingan-masala',
-    'speed': -7,
+    'speed': -5,
     'salad': -1,
     'classification': 'indian-main'
   },
