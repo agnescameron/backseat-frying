@@ -23,6 +23,13 @@ var recipes = [
   },
 
   {
+    'name': 'potato-masala',
+    'speed': 0.1,
+    'salad': -1.5,
+    'classification': 'indian-side'
+  },
+
+  {
     'name': 'basic-pancake',
     'speed': 3,
     'salad': -0.5,
