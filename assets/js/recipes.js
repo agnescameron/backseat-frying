@@ -9,6 +9,13 @@ var recipes = [
   },
 
   {
+    'name': 'papa-a-la-huanca&iacutena',
+    'speed': 6,
+    'salad': -1.5,
+    'classification': 'peruvian-side'
+  },
+
+  {
     'name': 'chana-dhal',
     'speed': -5,
     'salad': 5,
