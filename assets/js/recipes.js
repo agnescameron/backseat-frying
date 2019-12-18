@@ -3,8 +3,8 @@ var recipes = [
 
   {
     'name': 'spicy-cold-noodles',
-    'speed': 8,
-    'salad': 4,
+    'speed': 5.5,
+    'salad': 3.5,
     'classification': 'main'
   },
 
@@ -129,8 +129,15 @@ var recipes = [
 
   {
     'name': 'cold-soba',
-    'speed': 4,
+    'speed': 5.5,
     'salad': 4,
+    'classification': 'breakfast-carb'
+  },
+
+  {
+    'name': 'onigiri',
+    'speed': 3.5,
+    'salad': 2.5,
     'classification': 'breakfast-carb'
   },
   
