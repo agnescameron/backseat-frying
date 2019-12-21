@@ -36,7 +36,7 @@ function openLetter() {
 
   //draw the axes
   ctx.font = "15px Helvetica";
-  ctx.fillText(xAxis[0], 645, 340);
+  ctx.fillText(xAxis[0], xAxis[0] === 'fast' ? 675 : 645, 340);
   ctx.fillText(xAxis[1], 20, 340);
   ctx.fillText(yAxis[1], 330, 695);
   ctx.fillText(yAxis[0], 330, 15);

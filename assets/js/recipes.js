@@ -17,7 +17,7 @@ var recipes = [
     'fast': 6,
     'salad': -1.5,
     'church': -1,
-    'catholic': 8,
+    'catholic': 6,
     'classification': 'latin-side'
   },
 
