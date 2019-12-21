@@ -13,39 +13,44 @@ function openLetter() {
 }
 
 //draw grid
-function drawGrid(){
+  function drawGrid(){
+  var xAxes = ['fast slow', 'catholic protestant'];
+  var yAxes = ['salad fried', 'church state'];
+  var xAxis = xAxes[Math.floor(Math.random()*xAxes.length)].split(/\s+/g);
+  var yAxis = yAxes[Math.floor(Math.random()*yAxes.length)].split(/\s+/g);
 
+  //draw the canvas
 	var canvas = document.getElementById("canvas");
-  	var ctx = document.getElementById('canvas').getContext('2d');
+	var ctx = document.getElementById('canvas').getContext('2d');
 
-  	ctx.lineWidth = 3;
+	ctx.lineWidth = 3;
+  ctx.beginPath();
 
-	  ctx.beginPath();
+  ctx.moveTo(20, 350);
+  ctx.lineTo(700, 350);
+  ctx.stroke();
 
-    ctx.moveTo(20, 350);
-    ctx.lineTo(700, 350);
-    ctx.stroke();
+  ctx.moveTo(350, 20);
+  ctx.lineTo(350, 680);
+  ctx.stroke();
 
-    ctx.moveTo(350, 20);
-    ctx.lineTo(350, 680);
-    ctx.stroke();
+  //draw the axes
+  ctx.font = "15px Helvetica";
+  ctx.fillText(xAxis[0], 645, 340);
+  ctx.fillText(xAxis[1], 20, 340);
+  ctx.fillText(yAxis[1], 330, 695);
+  ctx.fillText(yAxis[0], 330, 15);
 
-    ctx.font = "15px Helvetica";
-    ctx.fillText("fast", 675, 340);
-    ctx.fillText("slow", 20, 340);
-    ctx.fillText("fried", 330, 695);
-    ctx.fillText("salad", 330, 15);
-
-    for(var i=0; i<recipes.length; i++){
-      $('<div />', {
-        id: recipes[i].name,
-        class: 'recipeName',
-        click: function(){ window.location.href = 'recipes/' + (this.id) + '.html' }, 
-      })
-      .html(recipes[i].name.replace(/-/g, ' '))
-      .css({left: 35*(recipes[i].speed+10), top: (690-35*(recipes[i].salad+10)) })
-      .appendTo($('#canvasCover'))
-     }
+  for(var i=0; i<recipes.length; i++){
+    $('<div />', {
+      id: recipes[i].name,
+      class: 'recipeName',
+      click: function(){ window.location.href = 'recipes/' + (this.id) + '.html' }, 
+    })
+    .html(recipes[i].name.replace(/-/g, ' '))
+    .css({left: 35*(recipes[i][xAxis[0]]+10), top: (690-35*(recipes[i][yAxis[0]]+10)) })
+    .appendTo($('#canvasCover'))
+   }
 }
 
 

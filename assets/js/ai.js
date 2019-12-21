@@ -47,7 +47,7 @@ function generateMeal () {
     var length = choices.length;
     var choice1 = choices[Math.floor(Math.random()*length)];
     points.push(choice1); 
-    remove(choices, choice1)   
+    remove(choices, choice1);   
     var choice2 = choices[Math.floor(Math.random()*length-1)];
     points.push(choice2); 
   }

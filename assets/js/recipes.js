@@ -1,29 +1,29 @@
 var recipes = [
-  //speed, salad from -10 to +10, where -10 is slow, fried, and +10 is fast, salad
+  //fast, salad from -10 to +10
   //church vs state (association with ritual)
   //centralised vs decentralised
   //protestant vs catholic
   {
     'name': 'spicy-cold-noodles',
-    'speed': 5.5,
+    'fast': 5.5,
     'salad': 3.5,
-    'church': -5,
+    'church': -5.5,
     'catholic': 6,
     'classification': 'main'
   },
 
   {
     'name': 'papa-a-la-huanca&iacutena',
-    'speed': 6,
+    'fast': 6,
     'salad': -1.5,
-    'church': 0,
-    'catholic': 11,
+    'church': -1,
+    'catholic': 8,
     'classification': 'latin-side'
   },
 
   {
     'name': 'chana-dhal',
-    'speed': -5,
+    'fast': -5,
     'salad': 5,
     'church': 7,
     'catholic': -9,
@@ -32,16 +32,16 @@ var recipes = [
 
   {
     'name': 'baingan-masala',
-    'speed': -5,
+    'fast': -5,
     'salad': -1,
-    'church': 9,
+    'church': 7.5,
     'catholic': 2,
     'classification': 'indian-main'
   },
 
   {
     'name': 'potato-masala',
-    'speed': 0.1,
+    'fast': 0.1,
     'salad': -1.5,
     'church': 3,
     'catholic': -2,
@@ -50,7 +50,7 @@ var recipes = [
 
   {
     'name': 'basic-pancake',
-    'speed': 3,
+    'fast': 3,
     'salad': -0.5,
     'church': -8,
     'catholic': 4,
@@ -59,16 +59,16 @@ var recipes = [
 
   {
     'name': 'blackberry-jam',
-    'speed': -1,
+    'fast': -1,
     'salad': -4,
     'church': -6,
-    'catholic': 8,
+    'catholic': 0.2,
     'classification': 'jam'
   },
 
   {
     'name': 'hiyayakko',
-    'speed': 10,
+    'fast': 10,
     'salad': 8,
     'church': 10,
     'catholic': -8,
@@ -77,16 +77,16 @@ var recipes = [
 
   {
     'name': 'cassava-suman',
-    'speed': -2.5,
-    'salad': -3,
-    'church': -5,
-    'catholic': 6,
+    'fast': -2.5,
+    'salad': -2.5,
+    'church': -4.5,
+    'catholic': 3.5,
     'classification': 'breakfast-carb'
   },
 
   {
     'name': 'maqloubeh',
-    'speed': -6,
+    'fast': -6,
     'salad': -4,
     'church': 9,
     'catholic': 4,
@@ -95,7 +95,7 @@ var recipes = [
 
   {
     'name': 'flatbread',
-    'speed': -2,
+    'fast': -2,
     'salad': -2,
     'church': -8,
     'catholic': -6,
@@ -104,7 +104,7 @@ var recipes = [
 
   {
     'name': 'fellahi-salad',
-    'speed': 8.5,
+    'fast': 8.5,
     'salad': 9.5,
     'church': -2,
     'catholic': -3,
@@ -113,7 +113,7 @@ var recipes = [
 
   {
     'name': 'baba-ganoush',
-    'speed': 2,
+    'fast': 2,
     'salad': 5,
     'church': 2,
     'catholic': 3,
@@ -122,7 +122,7 @@ var recipes = [
 
   {
     'name': 'garlic-potato-salad',
-    'speed': 2,
+    'fast': 2,
     'salad': 3,
     'church': -5,
     'catholic': 2,
@@ -131,16 +131,16 @@ var recipes = [
 
   {
     'name': 'tea-egg',
-    'speed': -2,
+    'fast': -2,
     'salad': 8,
-    'church': 8,
-    'catholic': -7,
+    'church': -5.5,
+    'catholic': -5,
     'classification': 'snack'
   },
 
   {
     'name': 'beef-peppers-noodles',
-    'speed': 4,
+    'fast': 4,
     'salad': -4,
     'church': -6,
     'catholic': 7,
@@ -149,16 +149,16 @@ var recipes = [
 
   {
     'name': 'braised-aubergine',
-    'speed': 4,
+    'fast': 4,
     'salad': 0.5,
-    'church': 5,
-    'catholic': 6,
+    'church': 4.5,
+    'catholic': 4,
     'classification': 'side'
   },
 
   {
     'name': 'cabbage-omelette',
-    'speed': 6,
+    'fast': 6,
     'salad': 1,
     'church': -3,
     'catholic': -1,
@@ -167,7 +167,7 @@ var recipes = [
 
   {
     'name': 'cold-soba',
-    'speed': 5.5,
+    'fast': 5.5,
     'salad': 4,
     'church': 8,
     'catholic': -8,
@@ -176,7 +176,7 @@ var recipes = [
 
   {
     'name': 'onigiri',
-    'speed': 3.5,
+    'fast': 3.5,
     'salad': 2.5,
     'church': 10,
     'catholic': -10,
@@ -185,16 +185,16 @@ var recipes = [
   
   {
     'name': 'congee',
-    'speed': -5,
-    'salad': 2,
+    'fast': -5,
+    'salad': 1.5,
     'church': -8,
-    'catholic': -8,
+    'catholic': -9,
     'classification':'breakfast-carb'
   },
 
   {
     'name': 'cucumber-salad',
-    'speed': 9,
+    'fast': 9,
     'salad': 9,
     'church': 7,
     'catholic': -6,
@@ -203,7 +203,7 @@ var recipes = [
 
   {
     'name': 'steamed-buns',
-    'speed': -4.5,
+    'fast': -4.5,
     'salad': -3.5,
     'church': 5,
     'catholic': 5,
@@ -212,7 +212,7 @@ var recipes = [
 
   {
     'name': 'dumplings',
-    'speed': -4,
+    'fast': -4,
     'salad': -4.5,
     'church': 8,
     'catholic': 5,
@@ -221,7 +221,7 @@ var recipes = [
 
   {
     'name': 'egg-and-tomato',
-    'speed': 4,
+    'fast': 4,
     'salad': 2,
     'church': 4,
     'catholic': -8,
@@ -230,16 +230,16 @@ var recipes = [
 
   {
     'name': 'egg-fried-rice',
-    'speed': 6,
+    'fast': 6,
     'salad': -3,
     'church': -7,
-    'catholic': 4,
+    'catholic': 6,
     'classification': 'main'
   },      
 
   {
     'name': 'fried-enokis',
-    'speed': 9,
+    'fast': 9,
     'salad': 5,
     'church': -5,
     'catholic': -1,
@@ -248,16 +248,16 @@ var recipes = [
 
   {
     'name': 'fried-greens',
-    'speed': 8.5,
+    'fast': 8.5,
     'salad': 7.5,
-    'church': -3,
+    'church': -3.5,
     'catholic': -8,
     'classification': 'veg'
   },      
 
   {
     'name': 'green-beans',
-    'speed': 5,
+    'fast': 5,
     'salad': 7,
     'church': 1,
     'catholic': -5,
@@ -266,25 +266,25 @@ var recipes = [
 
   {
     'name': 'grilled-mackerel',
-    'speed': 5,
+    'fast': 5,
     'salad': 4.5,
-    'church': 9,
+    'church': 8.5,
     'catholic': 0,
     'classification': 'main'
   },      
 
   {
     'name': 'fish-head-soup',
-    'speed': -1,
+    'fast': -1,
     'salad': 2.5,
-    'church': -2,
+    'church': -2.5,
     'catholic': -4,
     'classification': 'soup'
   },      
 
   {
     'name': 'komatsuna-nibitashi',
-    'speed': 7,
+    'fast': 7,
     'salad': 8.5,
     'church': 6,
     'catholic': -6,
@@ -293,16 +293,16 @@ var recipes = [
 
   {
     'name': 'korean-hot-soup',
-    'speed': 4,
+    'fast': 4,
     'salad': -1,
-    'church': -3,
+    'church': -4.5,
     'catholic': 8,
     'classification': 'soup'
   },      
 
   {
     'name': 'mapo-tofu',
-    'speed': 4,
+    'fast': 4,
     'salad': -2,
     'church': -2,
     'catholic': 5,
@@ -311,52 +311,52 @@ var recipes = [
 
   {
     'name': 'miso-aubergine',
-    'speed': -0.5,
+    'fast': -0.5,
     'salad': 2,
-    'church': 6,
+    'church': 5.5,
     'catholic': -4,
     'classification': 'side'
   },
 
   {
     'name': 'red-braised-fish',
-    'speed': 2,
+    'fast': 0.5,
     'salad': -5,
-    'church': 8,
+    'church': 4.5,
     'catholic': 10,
     'classification': 'main'
   },      
 
   {
     'name': 'salt-cod-stew',
-    'speed': -3,
+    'fast': -3,
     'salad': 1,
-    'church': 8,
+    'church': 8.5,
     'catholic': -6,
     'classification': 'main'
   },      
 
   {
     'name': 'soba-soup',
-    'speed': 6,
+    'fast': 6,
     'salad': 6,
-    'church': 7,
+    'church': 9,
     'catholic': -9,
     'classification': 'soup'
   },      
 
   {
     'name': 'steamed-fish',
-    'speed': 1,
+    'fast': 1,
     'salad': 6,
-    'church': 8,
-    'catholic': -8,
+    'church': 7.5,
+    'catholic': -6.5,
     'classification': 'main'
   },
 
   {
     'name': 'tasty-miso',
-    'speed': 9,
+    'fast': 9,
     'salad': 3,
     'church': 5,
     'catholic': -5,
