@@ -1,5 +1,5 @@
 var recipes = [
-  //fast, salad from -10 to +10
+  //fast, salad from -9 to +9
   //church vs state (association with ritual)
   //centralised vs decentralised
   //protestant vs catholic
@@ -68,9 +68,9 @@ var recipes = [
 
   {
     'name': 'hiyayakko',
-    'fast': 10,
+    'fast': 9,
     'salad': 8,
-    'church': 10,
+    'church': 9.5,
     'catholic': -8,
     'classification': 'side'
   },
@@ -178,8 +178,8 @@ var recipes = [
     'name': 'onigiri',
     'fast': 3.5,
     'salad': 2.5,
-    'church': 10,
-    'catholic': -10,
+    'church': 8.5,
+    'catholic': -8.5,
     'classification': 'breakfast-carb'
   },
   
@@ -323,7 +323,7 @@ var recipes = [
     'fast': 0.5,
     'salad': -5,
     'church': 4.5,
-    'catholic': 10,
+    'catholic': 9,
     'classification': 'main'
   },      
 
