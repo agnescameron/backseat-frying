@@ -22,6 +22,15 @@ var recipes = [
   },
 
   {
+    'name': 'tom-yum',
+    'fast': 7,
+    'salad': 2.5,
+    'church': 0.5,
+    'catholic': -7,
+    'classification': 'side'
+  },
+
+  {
     'name': 'papa-a-la-huanca&iacutena',
     'fast': 6,
     'salad': -1.5,
