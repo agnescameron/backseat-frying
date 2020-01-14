@@ -13,6 +13,15 @@ var recipes = [
   },
 
   {
+    'name': 'larb',
+    'fast': 3.5,
+    'salad': -3.5,
+    'church': 0.5,
+    'catholic': 7.5,
+    'classification': 'side'
+  },
+
+  {
     'name': 'papa-a-la-huanca&iacutena',
     'fast': 6,
     'salad': -1.5,
@@ -206,7 +215,7 @@ var recipes = [
     'fast': -4.5,
     'salad': -3.5,
     'church': 5,
-    'catholic': 5,
+    'catholic': 4.5,
     'classification': 'side'
   },
 
