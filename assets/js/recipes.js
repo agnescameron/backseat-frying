@@ -27,7 +27,7 @@ var recipes = [
     'salad': 2.5,
     'church': 0.5,
     'catholic': -7,
-    'classification': 'side'
+    'classification': 'soup'
   },
 
   {
