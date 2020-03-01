@@ -1,0 +1,7 @@
+on:
+  push:
+    branches:
+      - master
+    # file paths to consider in the event. Optional; defaults to all.
+    paths:
+      - 'recipes/*.html'

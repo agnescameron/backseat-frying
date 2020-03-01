@@ -13,6 +13,15 @@ var recipes = [
   },
 
   {
+    'name': 'samosas',
+    'fast': -4,
+    'salad': -8,
+    'church': -6.5,
+    'catholic': 4,
+    'classification': 'main'
+  },
+
+  {
     'name': 'larb',
     'fast': 3.5,
     'salad': -3.5,

@@ -1,0 +1,24 @@
+{
+  "name": "backseat-frying",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agnescameron/backseat-frying.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/agnescameron/backseat-frying/issues"
+  },
+  "homepage": "https://github.com/agnescameron/backseat-frying#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.2",
+    "@actions/github": "^2.1.1",
+    "@actions/glob": "^0.1.0"
+  }
+}
