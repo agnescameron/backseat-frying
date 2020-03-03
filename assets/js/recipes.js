@@ -240,7 +240,7 @@ var recipes = [
   {
     'name': 'dumplings',
     'fast': -4,
-    'salad': -4.5,
+    'salad': -6.5,
     'church': 8,
     'catholic': 5,
     'classification': 'main'
