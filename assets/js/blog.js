@@ -12,5 +12,5 @@ async function loadPosts() {
     }
 }
 
-
+  
 loadPosts();
