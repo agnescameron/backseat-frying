@@ -195,9 +195,17 @@ li {
 
 .blog-img{
   position: relative;
-  width: 500px;
+  width: 100%;
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+.blog-post {
+  margin-left: auto;
+  margin-right: auto;
+  width: 35vw;
+  min-width: 300px;
+  margin-bottom: 80px;
 }
 
 #imagewords:hover {
