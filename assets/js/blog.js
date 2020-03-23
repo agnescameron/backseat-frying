@@ -12,5 +12,4 @@ async function loadPosts() {
     }
 }
 
-  
 loadPosts();
