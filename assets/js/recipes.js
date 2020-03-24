@@ -13,6 +13,15 @@ var recipes = [
   },
 
   {
+    'name': 'pancita',
+    'fast': -2,
+    'salad': 6,
+    'church': -8,
+    'catholic': 2,
+    'classification': 'soup'
+  },
+
+  {
     'name': 'ravioli',
     'fast': -6,
     'salad': -2,
@@ -133,7 +142,7 @@ var recipes = [
     'name': 'flatbread',
     'fast': -2,
     'salad': -2,
-    'church': -8,
+    'church': -9,
     'catholic': -6,
     'classification': 'mezze'
   },
