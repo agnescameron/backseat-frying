@@ -148,6 +148,15 @@ var recipes = [
   },
 
   {
+    'name': 'aloo paratha',
+    'fast': -4,
+    'salad': -3,
+    'church': -6,
+    'catholic': -4,
+    'classification': 'indian-side'
+  },
+
+  {
     'name': 'fellahi-salad',
     'fast': 8.5,
     'salad': 9.5,
