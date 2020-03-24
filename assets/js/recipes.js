@@ -148,7 +148,7 @@ var recipes = [
   },
 
   {
-    'name': 'aloo paratha',
+    'name': 'aloo-paratha',
     'fast': -4,
     'salad': -3,
     'church': -6,
@@ -346,7 +346,7 @@ var recipes = [
   },      
 
   {
-    'name': 'korean-hot-soup',
+    'name': 'sundubu-jjigae',
     'fast': 4,
     'salad': -1,
     'church': -4.5,
