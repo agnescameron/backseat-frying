@@ -70,7 +70,16 @@ var recipes = [
     'name': 'chana-dhal',
     'fast': -5,
     'salad': 5,
-    'church': 7,
+    'church': -2,
+    'catholic': -9,
+    'classification': 'indian-side'
+  },
+
+  {
+    'name': 'seema-vankaya-pappu',
+    'fast': -4,
+    'salad': 5.5,
+    'church': -3,
     'catholic': -9,
     'classification': 'indian-side'
   },
