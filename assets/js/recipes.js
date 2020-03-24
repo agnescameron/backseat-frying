@@ -13,6 +13,24 @@ var recipes = [
   },
 
   {
+    'name': 'dosa',
+    'fast': -5,
+    'salad': 4.5,
+    'church': -5.5,
+    'catholic': -7,
+    'classification': 'indian-side'
+  },
+
+  {
+    'name': 'cabbage-thoran',
+    'fast': 5,
+    'salad': 8,
+    'church': -3.5,
+    'catholic': -3,
+    'classification': 'indian-side'
+  },
+
+  {
     'name': 'pancita',
     'fast': -2,
     'salad': 6,
@@ -36,7 +54,7 @@ var recipes = [
     'salad': -8,
     'church': -6.5,
     'catholic': 4,
-    'classification': 'main'
+    'classification': 'indian-main'
   },
 
   {
