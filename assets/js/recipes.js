@@ -177,7 +177,7 @@ var recipes = [
   {
     'name': 'aloo-paratha',
     'fast': -4,
-    'salad': -3,
+    'salad': -5,
     'church': -6,
     'catholic': -4,
     'classification': 'indian-side'
