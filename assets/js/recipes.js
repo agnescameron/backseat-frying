@@ -22,6 +22,15 @@ var recipes = [
   },
 
   {
+    'name': 'trippa-a-la-romana',
+    'fast': 0,
+    'salad': 4.5,
+    'church': 2.5,
+    'catholic': 9,
+    'classification': 'side'
+  },
+
+  {
     'name': 'dosa',
     'fast': -5,
     'salad': 4.5,
