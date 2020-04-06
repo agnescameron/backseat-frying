@@ -175,6 +175,15 @@ var recipes = [
   },
 
   {
+    'name': 'caramelised-almonds',
+    'fast': 5,
+    'salad': 1,
+    'church': -3,
+    'catholic': 4.5,
+    'classification': 'snack'
+  },
+
+  {
     'name': 'maqloubeh',
     'fast': -6,
     'salad': -4,
