@@ -177,8 +177,8 @@ var recipes = [
   {
     'name': 'caramelised-almonds',
     'fast': 5,
-    'salad': 1,
-    'church': -3,
+    'salad': 1.5,
+    'church': -2.5,
     'catholic': 4.5,
     'classification': 'snack'
   },
