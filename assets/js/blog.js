@@ -10,7 +10,7 @@ async function loadPosts() {
             console.log(error)
         }
     }
-    $('#loadingMsg').remove();
+    $('#loading').remove();
 }
 
 loadPosts();
