@@ -6,10 +6,9 @@ function openLetter() {
   $('#letterContents').html(` <p id = "letterContents">
   this is a website we made for adam's birthday, but since it has expanded! we even have a <a href="https://tinyletter.com/backseatfrying">mailing list</a> now! (and a <a href="https://backseatfrying.net/blog/blog.html">secret blog</a>). 
   <br><br>
-  if you're out of ideas try consulting the oracle, and be aware all ingredients are positioned relative to egg house, e.g. <i>next to <a href="https://www.google.com/maps/place/Market+Basket/@42.3730471,-71.1062517,15.45z/data=!4m5!3m4!1s0x89e37735b497dedb:0x58d9277e3873315d!8m2!3d42.380782!4d-71.1016327">market basket</a></i> (best supermarket, for which there is no substitute). 
+  try consulting the oracle, and know that all ingredients are positioned relative to egg house, e.g. <i>next to <a href="https://www.google.com/maps/place/Market+Basket/@42.3730471,-71.1062517,15.45z/data=!4m5!3m4!1s0x89e37735b497dedb:0x58d9277e3873315d!8m2!3d42.380782!4d-71.1016327">market basket</a></i> (best supermarket, for which there is no substitute). 
   <br><br>
-  agnes + gary
-  </p>`)
+  agnes + gary`)
   $('.letterBox').toggle()
 }
 

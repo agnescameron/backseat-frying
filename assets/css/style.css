@@ -40,6 +40,12 @@ a:hover {
   position: relative;
 }
 
+#loading {
+  position: fixed;
+  left: 45vw; 
+  top: 300px;
+}
+
 #closeButton {
   width: 30px;
   height: 30px;
