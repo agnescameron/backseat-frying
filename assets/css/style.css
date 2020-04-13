@@ -2,6 +2,10 @@ body {
   font-family: helvetica;
 }
 
+pre {
+  font-family: helvetica;
+}
+
 a {
   text-decoration: none; 
   color: black;
@@ -10,6 +14,30 @@ a {
 
 a:hover {
     color: lightblue;
+}
+
+#paste {
+  position: fixed;
+  left: 80%;
+  top: 550px;
+  width: 116px;
+  height: 116px;
+  background: red;
+  -moz-border-radius: 58px;
+  -webkit-border-radius: 58px;
+  border-radius: 58px;
+  background-image: url('../img/maesri_chu_chee.png'); 
+  background-size: contain;
+}
+
+#paste:hover {
+  background-image: none;
+  background-color: red;
+}
+
+#pasteText {
+  top: -34px; 
+  position: relative;
 }
 
 #closeButton {

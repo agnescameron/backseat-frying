@@ -2,6 +2,7 @@
 <head>
 	  <link rel="stylesheet" href="assets/css/style.css">
 	    <script src="assets/js/jquery.js"></script>
+	    <script src="assets/js/circletype.min.js"></script>
 	    <script type="text/javascript" src="assets/js/recipes.js"></script>
 </head>
 
@@ -18,6 +19,12 @@
 	</p>
 </div>
 
+<a href="pastes/index.html">
+	<div id="paste">
+		<pre id="pasteText">aste of the week               paste of the week              p</pre>
+	</div>
+</a>
+
 <div id='info'>
 	<div onClick='openLetter()'>x about</div>
 	<div onClick='window.location.href = "ingredients.html"'>x ingredients</div>
@@ -28,6 +35,11 @@
 <canvas id="canvas" width="700px" height="700px">
   Your browser does not support the canvas element.
 </canvas>
+
+<script type="text/javascript">
+	const circleType = new CircleType(document.getElementById('pasteText'));
+</script>
+
 <script type="text/javascript" src="assets/js/ai.js"></script>
 <script type="text/javascript" src="assets/js/main.js"></script>
 </body>
