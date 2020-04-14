@@ -55,3 +55,12 @@ function openLetter() {
 
 
 drawGrid();
+
+const date = new Date();
+const day = date.getDay();
+
+if(day<2){
+  $('#paste').show()
+  $('#pasteText').show()
+  const circleType = new CircleType(document.getElementById('pasteText'));
+}

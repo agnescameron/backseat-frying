@@ -17,6 +17,7 @@ a:hover {
 }
 
 #paste {
+  display: none;
   position: fixed;
   left: 80%;
   top: 550px;
@@ -36,6 +37,7 @@ a:hover {
 }
 
 #pasteText {
+  display: none;
   top: -34px; 
   position: relative;
 }
