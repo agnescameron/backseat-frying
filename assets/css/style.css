@@ -40,8 +40,22 @@ a:hover {
   position: relative;
 }
 
+.pasteSample {
+  width: 60px;
+  height: 60px;
+  -moz-border-radius: 30px;
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+  margin-top: -10px;
+  margin-bottom: 10px;
+  display: block;
+  background-size: cover;
+  background-position: center;
+}
+
 #loading {
   position: fixed;
+  background-color: white;
   left: 45vw; 
   top: 300px;
 }
