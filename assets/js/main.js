@@ -59,7 +59,7 @@ drawGrid();
 const date = new Date();
 const day = date.getDay();
 
-if(day<2){
+if(day<2 || day===5){
   $('#paste').show()
   $('#pasteText').show()
   const circleType = new CircleType(document.getElementById('pasteText'));
