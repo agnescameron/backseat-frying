@@ -112,6 +112,15 @@ var recipes = [
   },
 
   {
+    'name': 'taro-cake',
+    'fast': -4.5,
+    'salad': -1.5,
+    'church': -7.5,
+    'catholic': -9,
+    'classification': 'side'
+  },
+
+  {
     'name': 'chana-dhal',
     'fast': -5,
     'salad': 5,
@@ -121,7 +130,7 @@ var recipes = [
   },
 
   {
-    'name': 'seema-vankaya-pappu',
+    'name': 'chayote-dhal',
     'fast': -4,
     'salad': 5.5,
     'church': -3,
