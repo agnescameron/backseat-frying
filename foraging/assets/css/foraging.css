@@ -1,0 +1,56 @@
+/*everything relative to vw*/
+
+
+html, body {
+    min-height: 100%;
+    margin: 0;
+    font-family: helvetica;
+}
+
+#map {
+	width: 100vw;
+	background-size: cover;
+}
+
+#map-img {
+	width: 100%;
+}
+
+#about{
+
+}
+
+.plant {
+	position: absolute;
+}
+
+.plant-name {
+	color: black;
+	background-color: white;
+	display: none;
+}
+
+#bag {
+	position: fixed;
+	top:30px;
+	right: 30px;
+	background-image: url('../img/thank-you-bag.png');
+	height: 100px;
+	width: 100px;
+	background-size: cover;
+	z-index: 1;
+}
+
+#bag-contents {
+	display: none;
+	position: fixed;
+	top:30px;
+	right: 30px;
+	width: 200px;
+	background-color: white;
+	z-index: 2;
+}
+
+.bag-item {
+	margin: 20px 20px 20px 20px;
+}
