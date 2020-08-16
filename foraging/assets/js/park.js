@@ -68,11 +68,9 @@ function growPlants() {
 //this code runs once the document has loaded
 $(document).ready(function() {
 	growPlants();
+	$(window).click((event) => { console.log('locationX: '+ event.pageX/$(window).width() + ',\nlocationY: '+ event.pageY/$(window).width() ) })
 
 	//event listeners
-	$('#map').click(function(event){
-		console.log("locationX: " + event.pageX/$(window).width() + `, \nlocationY:` + event.pageY/$(window).width() + ",")
-	})
 	$('#bag').click(() => $('#bag-contents').show())
 	$('#bag-contents').click(() => $('#bag-contents').hide())
 })

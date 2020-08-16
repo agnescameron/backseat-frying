@@ -22,51 +22,6 @@ var recipes = [
   },
 
   {
-    'name': 'husband-and-wife-offal',
-    'fast': 2,
-    'salad': 7.5,
-    'church': -7.5,
-    'catholic': 7,
-    'classification': 'side'
-  },
-
-  {
-    'name': 'trippa-a-la-romana',
-    'fast': 0,
-    'salad': 4.5,
-    'church': 2.5,
-    'catholic': 9,
-    'classification': 'side'
-  },
-
-  {
-    'name': 'dosa',
-    'fast': -5,
-    'salad': 4.5,
-    'church': -5.5,
-    'catholic': -7,
-    'classification': 'indian-side'
-  },
-
-  {
-    'name': 'cabbage-thoran',
-    'fast': 5,
-    'salad': 8,
-    'church': -3.5,
-    'catholic': -3,
-    'classification': 'indian-side'
-  },
-
-  {
-    'name': 'pancita',
-    'fast': -2,
-    'salad': 6,
-    'church': -8,
-    'catholic': 2,
-    'classification': 'soup'
-  },
-
-  {
     'name': 'ravioli',
     'fast': -6,
     'salad': -2,
@@ -85,30 +40,12 @@ var recipes = [
   },
 
   {
-    'name': 'larb',
-    'fast': 3.5,
-    'salad': -3.5,
-    'church': 0.5,
-    'catholic': 7.5,
-    'classification': 'side'
-  },
-
-  {
     'name': 'tom-yum',
     'fast': 7,
     'salad': 2.5,
     'church': 0.5,
     'catholic': -7,
     'classification': 'soup'
-  },
-
-  {
-    'name': 'papa-a-la-huanca&iacutena',
-    'fast': 6,
-    'salad': -1.5,
-    'church': -1,
-    'catholic': 6,
-    'classification': 'latin-side'
   },
 
   {
@@ -126,33 +63,6 @@ var recipes = [
     'salad': 5,
     'church': -2,
     'catholic': -9,
-    'classification': 'indian-side'
-  },
-
-  {
-    'name': 'chayote-dhal',
-    'fast': -4,
-    'salad': 5.5,
-    'church': -3,
-    'catholic': -9,
-    'classification': 'indian-side'
-  },
-
-  {
-    'name': 'baingan-masala',
-    'fast': -5,
-    'salad': -1,
-    'church': 7.5,
-    'catholic': 2,
-    'classification': 'indian-main'
-  },
-
-  {
-    'name': 'potato-masala',
-    'fast': 0.1,
-    'salad': -1.5,
-    'church': 3,
-    'catholic': -2,
     'classification': 'indian-side'
   },
 
@@ -175,24 +85,6 @@ var recipes = [
   },
 
   {
-    'name': 'hiyayakko',
-    'fast': 9,
-    'salad': 8,
-    'church': 9.5,
-    'catholic': -8,
-    'classification': 'side'
-  },
-
-  {
-    'name': 'cassava-suman',
-    'fast': -2.5,
-    'salad': -2.5,
-    'church': -4.5,
-    'catholic': 3.5,
-    'classification': 'breakfast-carb'
-  },
-
-  {
     'name': 'caramelised-almonds',
     'fast': 5,
     'salad': 1.5,
@@ -202,30 +94,12 @@ var recipes = [
   },
 
   {
-    'name': 'maqloubeh',
-    'fast': -6,
-    'salad': -4,
-    'church': 9,
-    'catholic': 4,
-    'classification': 'mezze-main'
-  },
-
-  {
     'name': 'flatbread',
     'fast': -2,
     'salad': -2,
     'church': -9,
     'catholic': -6,
     'classification': 'mezze'
-  },
-
-  {
-    'name': 'aloo-paratha',
-    'fast': -4,
-    'salad': -5,
-    'church': -6,
-    'catholic': -4,
-    'classification': 'indian-side'
   },
 
   {
@@ -243,15 +117,6 @@ var recipes = [
     'salad': 5,
     'church': 2,
     'catholic': 3,
-    'classification': 'mezze'
-  },
-
-  {
-    'name': 'garlic-potato-salad',
-    'fast': 2,
-    'salad': 3,
-    'church': -5,
-    'catholic': 2,
     'classification': 'mezze'
   },
 
@@ -415,15 +280,6 @@ var recipes = [
     'church': 6,
     'catholic': -6,
     'classification': 'veg'
-  },      
-
-  {
-    'name': 'sundubu-jjigae',
-    'fast': 4,
-    'salad': -1,
-    'church': -4.5,
-    'catholic': 8,
-    'classification': 'soup'
   },      
 
   {

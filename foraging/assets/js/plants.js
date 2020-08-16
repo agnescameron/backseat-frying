@@ -67,9 +67,30 @@ export const patches = [
 	},
 
 	{
+		plant: "wild onion",
+		locationX: 0.5667293233082706,
+		locationY: 0.5808270676691729,
+		abundance: "low",
+	},
+
+	{
+		plant: "wild onion",
+		locationX: 0.6785714285714286,
+		locationY: 0.7218045112781954,
+		abundance: "low",
+	},
+
+	{
 		plant: "chickweed",
 		locationX: 0.7603890362511052, 
 		locationY:0.3660477453580902,
+		abundance: "low",
+	},
+
+	{
+		plant: "chickweed",
+		locationX: 0.3919172932330827,
+		locationY: 0.6268796992481203,
 		abundance: "low",
 	},
 
@@ -113,6 +134,13 @@ export const patches = [
 		locationX: 0.7963206307490145, 
 		locationY:0.5085413929040736,
 		abundance: "medium",
+	},
+
+	{
+		plant: "garlic mustard",
+		locationX: 0.7415413533834586,
+		locationY: 0.6992481203007519,
+		abundance: "high",
 	},
 
 	{
